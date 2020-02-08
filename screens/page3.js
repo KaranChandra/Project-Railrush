@@ -4,16 +4,18 @@ import {StyleSheet, Text, View, FlatList,TouchableOpacity} from 'react-native';
 
 export default function Page3({navigation}) {
   const [station,setStation] = useState([
-    { name : 'Borivali' , id : '1'},
-    { name : 'Kandivali' , id : '2'},
-    { name : 'Malad' , id : '3'},
-    { name : 'Goregaon' , id : '4'},
-    { name : 'RamMandir' , id : '5'},
-    { name : 'Bandra' , id : '6'},
-    { name : 'Dahisar' , id : '7'},
-    { name : 'Dadar' , id : '8'},
-    { name : 'Kurla' , id : '9'},
-    { name : 'Churchgate' , id : '10'},
+  //  { name : 'Virar' , id : '1'},
+    { name : 'Vasai' , id : '2'},
+    { name : 'Bhayander' , id : '3'},
+    { name : 'Dahisar' , id : '4'},
+    { name : 'Borivali' , id : '5'},
+    { name : 'Goregaon' , id : '6'},
+    { name : 'Andheri' , id : '7'},
+    { name : 'Bandra' , id : '8'},
+    { name : 'Dadar' , id : '9'},
+    { name : 'Mumbai Central' , id : '10'},
+    { name : 'Marine Lines' , id : '11'},
+    { name : 'Churchgate' , id : '12'},
   ]);
 
   const goToPage4 = (stationName)=>{
@@ -40,7 +42,7 @@ export default function Page3({navigation}) {
     container: {
       flex: 1,
       backgroundColor: '#000',
-      paddingTop: 7,
+      paddingTop: 1,
       paddingHorizontal : 10
     },
     txt:{

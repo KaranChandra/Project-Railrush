@@ -6,16 +6,18 @@ import {StyleSheet, Text, View, FlatList,TouchableOpacity} from 'react-native';
 
 export default function Page33({navigation}) {
   const [station,setStation] = useState([
-    { name : 'Churchgate' , id : '1'},
-    { name : 'Kurla' , id : '2'},
-    { name : 'Dadar' , id : '3'},
-    { name : 'Dahisar' , id : '4'},
+   // { name : 'Churchgate' , id : '1'},
+    { name : 'Marine Lines' , id : '2'},
+    { name : 'Mumbai Central' , id : '3'},
+    { name : 'Dadar' , id : '4'},
     { name : 'Bandra' , id : '5'},
-    { name : 'RamMandir' , id : '6'},
+    { name : 'Andheri' , id : '6'},
     { name : 'Goregoan' , id : '7'},
-    { name : 'Malad' , id : '8'},
-    { name : 'Kandivali' , id : '9'},
-    { name : 'Borivali' , id : '10'},
+    { name : 'Borivali' , id : '8'},
+    { name : 'Dahisar' , id : '9'},
+    { name : 'Bhayander' , id : '10'},
+    { name : 'Vasai' , id : '11'},
+    { name : 'Virar' , id : '12'},
   ]);
 
   const goToPage4 = (stationName)=>{
@@ -30,10 +32,10 @@ export default function Page33({navigation}) {
         keyExtractor= {(item) => item.id}
         data={station}
         renderItem={({item}) => (
-        <TouchableOpacity  onPress={() => goToPage4(item.name)}>
-          <Text style={styles.txt} > {item.name} </Text>
+       <TouchableOpacity onPress={() => goToPage4(item.name)}>
+           <Text style={styles.txt} > {item.name} </Text>
          </TouchableOpacity>
-        )}
+          )}
         />
       </View>
     );
@@ -43,7 +45,7 @@ export default function Page33({navigation}) {
     container: {
       flex: 1,
       backgroundColor: '#000',
-      paddingTop: 7,
+      paddingTop: 1,
       paddingHorizontal : 10
     },
     txt:{
